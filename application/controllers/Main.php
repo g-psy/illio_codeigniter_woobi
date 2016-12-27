@@ -13,8 +13,8 @@ class Main extends CI_Controller {
 	}
 
 	function _head(){
-		var_dump($this->session->all_userdata());
-		$this->session->set_userdata('session_test', 'jisang');
+		// var_dump($this->session->all_userdata());
+		// $this->session->set_userdata('session_test', 'jisang');
 	}
 
 }
