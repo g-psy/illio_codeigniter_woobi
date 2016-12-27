@@ -1,0 +1,235 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* Jisang custom */
+nav {
+    position: fixed !important;
+    box-sizing: border-box;
+    transition: all 0.2s ease !important;
+    background-color: #1565c0 !important;
+    box-shadow: none !important;
+    z-index: 1000 !important;
+  }
+
+.side-nav {
+  z-index: 9999;
+}
+
+
+/* Form Colors */
+
+  /* label focus color */
+   .input-field input[class=validate]:focus + label {
+     color: #3565af;
+   }
+   .input-field textarea[class=materialize-textarea]:focus + label {
+     color: #3565af;
+   }
+  /* label underline focus color */
+   .input-field input[class=validate]:focus {
+     border-bottom: 1px solid #3565af;
+     box-shadow: 0 1px 0 0 #3565af;
+   }
+   .input-field textarea[class=materialize-textarea]:focus {
+     border-bottom: 1px solid #3565af;
+     box-shadow: 0 1px 0 0 #3565af;
+   }
+
+.btn-large:hover {
+  background-color: #5787cf !important;
+}
+
+.brand-logo {
+  line-height: 95px;
+}
+
+.brand-logo img {
+  width: 75px;
+}
+
+.sec_title {
+  color: #fff;
+  text-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  /*padding: 50px 0;*/
+  width: 100%;
+}
+
+#index-banner {
+  height: 916px;
+}
+
+#index-logo img {
+  width: 450px;
+  margin-top: 212px;
+  margin-bottom: 30px;
+}
+
+#team-banner {
+  height: auto;
+}
+
+#service-banner {
+  height: auto;
+}
+
+#contact-banner {
+  height: auto;
+}
+
+#footer-connect li {
+  display: inline;
+}
+
+/* Original */
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #fff;
+}
+
+.parallax-container {
+  min-height: 88px; // Default is 380px
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.parallax-background {
+  width: 100%;
+}
+
+
+@media only screen and (min-width : 993px) {
+  .link_div {
+    padding-bottom: 20px;
+  }
+  nav {
+    position: fixed !important;
+    height: 80px !important;
+    line-height: 80px !important;
+    box-sizing: border-box;
+    transition: all 0.2s ease !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    z-index: 1000 !important;
+  }
+
+  .nav-small {
+    height: 64px !important;
+    line-height: 64px !important;
+    transition: all 0.2s ease !important;
+    background-color: #3565af !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .nav-small-logo .brand-logo {
+    line-height: 80px !important;
+    transition: all 0.2s ease !important;
+  }
+
+  #team-banner {
+    height: auto;
+    padding-top: 50px;
+  }
+
+  #service-banner {
+    height: 365px;
+    padding-top: 50px;
+  }
+
+  #contact-banner {
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    /*top: 40%;*/
+  }
+  nav {
+    height: 64px !important;
+    line-height: 64px !important;
+  }
+
+  .brand-logo {
+    line-height: 84px;
+  }
+
+  #index-banner {
+    height: 535px;
+  }
+
+  #index-logo img {
+    width: 330px;
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .link_div {
+    /*display: none;*/
+    /*padding: 0;*/
+  }
+  nav {
+    height: 54px !important;
+    line-height: 54px !important;
+  }
+  .brand-logo {
+    line-height: 65px;
+  }
+
+  .brand-logo img {
+    width: 55px;
+  }
+
+  #index-banner {
+    height: 575px;
+  }
+
+  /*#index-banner .section {
+    top: 0;
+  }*/
+
+  #index-logo img {
+    width: 250px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+
+  #footer-company li {
+  display: inline;
+  padding-right: 20px;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
