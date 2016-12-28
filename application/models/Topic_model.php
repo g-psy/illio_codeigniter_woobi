@@ -5,6 +5,6 @@ class Topic_model extends CI_Model {
 	}
 
 	public function gets(){
-		return $this->db->query('SELECT * FROM topic')->result();
+		// return $this->db->query('SELECT * FROM topic')->result();
 	}
 }
