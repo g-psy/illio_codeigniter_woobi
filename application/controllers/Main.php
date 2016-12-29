@@ -7,7 +7,7 @@ class Main extends CI_Controller {
 	{
 		// $this->load->view('main');
 		// $this->load->database();
-		$this->load->template('main');
+		$this->load->view('main');
 	}
 
 	function _head(){
