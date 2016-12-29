@@ -20,7 +20,7 @@ class Main extends CI_Controller {
 
 		if(true){
 			$this->load->helper('url');
-			redirect('auth/login');
+			redirect('/auth/login');
 		}
 	}
 

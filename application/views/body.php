@@ -104,11 +104,11 @@
         <form>
           <div class="row">
             <div class="form-group">
-              <label for="email">E-mail:</label>
+              <label for="email">E-mail :</label>
               <input type="email" class="form-control" id="email">
             </div>
             <div class="form-group">
-              <label for="text">Contents:</label>
+              <label for="text">내용 :</label>
               <textarea class="form-control" rows="8"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
@@ -119,7 +119,7 @@
   </div>
   <div id="top" class="container">
     <div class="row">
-      <a href="#" role="button" class="btn btn-info">TOP</a>
+      <a href="#index-banner" role="button" class="btn btn-info scroll">TOP</a>
     </div>
   </div>
 </div>

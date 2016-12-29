@@ -17,5 +17,8 @@
     	$('html, body').animate({scrollTop:$(this.hash).offset().top}, 880);
   	});
 
+// Mouse Wheel Smooth Scroll
+    $(window).smoothWheel();
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space

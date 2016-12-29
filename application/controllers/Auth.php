@@ -8,17 +8,23 @@ class Auth extends CI_Controller {
 	}
 
 	function login(){
+		$this->load->view('header');
 		$this->load->view('login');
 	}
+
 	function logout(){
 		$this->session->sess_destroy();
 		$this->load->helper('url');
-		redirect('');
+		redirect('/');
 	}
+
 	function register(){
-		// $this->load->view('/layout/html_header');
-		// $this->load->view('/layout/layout_header');
+		$this->load->view('header');
 		$this->load->view('register');
+	}
+
+	function authentication(){
+		echo "인증";
 	}
 }
 ?>

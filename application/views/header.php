@@ -19,6 +19,13 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="../assets/js/init.js"></script>
   <script type="text/javascript" src="../assets/js/chkBrowser.js"></script>
+  <script type="text/javascript" src="../assets/js/gambit-smoothscroll-min.js"></script>
+  <script type="text/javascript">
+    new GambitSmoothScroll({
+      amount: 150,
+      speed: 900
+    });
+  </script>
 
   <!-- Materialize CSS -->
   <!-- <link href="../assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
@@ -28,10 +35,21 @@
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 
-
   <!-- Maps API -->
   <!-- <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?aae93eb0fc2ed71fe6c21764e33a5313"></script>
   <script type="text/javascript" src="js/maps.js"></script> -->
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89605200-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 
 <body>
@@ -46,7 +64,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="brand-logo" alt="illio" src="../assets/img/logo/illioLogoWhite.png"></a>
+        <a class="navbar-brand" href="/"><img class="brand-logo" alt="illio" src="../assets/img/logo/illioLogoWhite.png"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,23 +74,24 @@
           <li><a href="#link-team" class="scroll">Team</a></li>
           <li><a href="#link-service" class="scroll">Service</a></li>
           <li><a href="#link-contact" class="scroll">Contact</a></li>
-          <li class="dropdown">
+          <!-- <?php
+          if($this->session->userdata('is_login')){
+          ?> -->
+            <!-- <li><a href="/auth/logout">로그아웃</a></li> -->
+          <!-- <?php
+          } else {
+          ?> -->
+            <!-- <li><a href="/auth/login">로그인</a></li>
+            <li><a href="/auth/register">회원가입</a></li> -->
+          <!-- <?php
+          }
+          ?> -->
+          <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <?php
-              if($this->session->userdata('is_login')){
-              ?>
-                <li><a href="auth/logout">로그아웃</a></li>
-              <?php
-              } else {
-              ?>
-                <li><a href="auth/login">로그인</a></li>
-                <li><a href="auth/register">회원가입</a></li>
-              <?php
-              }
-              ?>
+              <li><a href="/auth/login">로그인</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
